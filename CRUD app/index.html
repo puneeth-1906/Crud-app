@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple CRUD App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD Application</h1>
+    <form id="userForm">
+      <input type="text" id="name" placeholder="Enter Name" required>
+      <input type="email" id="email" placeholder="Enter Email" required>
+      <button type="submit" id="submitBtn">Add User</button>
+    </form>
+
+    <h2>Users List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
